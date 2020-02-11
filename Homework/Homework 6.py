@@ -40,7 +40,7 @@ maxY = max(yList)
 
 don = turtle.Turtle()
 wn = turtle.Screen()
-wn.setworldcoordinates(0,0,maxY+10,maxY+10)
+wn.setworldcoordinates(0,0,maxX+10,maxY+10)
 
 don.penup()
 
