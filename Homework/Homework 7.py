@@ -3,7 +3,7 @@ import turtle
 def counterLettersInAString(someString):
     counts = {}
     for char in someString:
-        if counts.get(char):
+        if char in counts:
             counts[char] += 1
         else:
             counts[char] = 1
@@ -11,7 +11,7 @@ def counterLettersInAString(someString):
 
 countLtr = (counterLettersInAString('aurhklghzxcaudrgvxcvdfhuihgawrhhkrengio98456%*^%$^$*^&@ahrghqhargkfhh43th4n'))
 
-#print(countLtr )
+print(countLtr )
 #print(len(countLtr))
 
 ks = list(countLtr.keys())

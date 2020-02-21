@@ -1,0 +1,42 @@
+'''
+5. Write a function called encrypt_6() to encrypt a message. Your function will work like a substitution
+cipher but each character is replaced by the character 6 characters to its left in the alphabet. For example the
+letter “g” becomes the letter “a”. If a letter is past the letter “g” then the counting wraps around to the
+letter “z” again, so “b” becomes “v”, “d” becomes “x” and so on.
+Hint: Whenever you talk about things wrapping around it’s a good idea to think of modulo arithmetic.
+'''
+
+function that takes a string as a paramenter
+    alphabet = 'abcdef...'
+    for each character in that string
+            find it in alphabet (this returns the index of the letter)
+            subtract 6 from that index
+            find letter based on the new index
+            add that new letter to a string
+
+
+
+'''
+6. Create a list containing 101 random integers between 0 and 1000 (use iteration, append, and the random module).
+Write three functions: average, median and average_median_compare. Each function will take the list of random
+integers as a parameter. The average_median_compare function will return the string “average” if the average
+value is greatest, “median” if the median value is greatest and "equal" if they are the same. Test your function
+for accuracy using a list of known values and then run it with the list of random integers you created.
+'''
+
+
+create list using for loop and random method
+
+function average
+    sum the numbers
+    divide from total in list
+    return avg
+
+function median
+    sort the list
+    median  = len(mylist) // 2
+    return myList[median]
+
+function compare (median, avg)
+    if median > return 'median'
+    etc.
